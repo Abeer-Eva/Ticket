@@ -8,11 +8,13 @@ export class Kund extends React.Component {
       <form>
         <p>Enter your name:</p>
         <input
-          type="text"
+          type="text" 
+          
         />
         <p>Enter your telefon number:</p>
         <input
-          type="tel"
+          type="tel" 
+          
         />
       </form>
     );

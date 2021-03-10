@@ -1,7 +1,14 @@
+
+
 function Boka(){
 
+    
     return(
-        <button value="Boka Biljetter">Boka Biljetter</button>
+        
+        <button  value="Boka Biljetter" 
+        type="submit"> Boka Biljetter </button>
+      
+      
     )
 }
 export default Boka;
