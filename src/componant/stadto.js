@@ -4,13 +4,19 @@ import React ,{useState} from 'react';
     
     const[dropdown , setDropdown]= useState(" ");
     return(
-    <form style={{height: "32px",
+    <form id="grid" 
+    style={{height: "32px",
         width: "132px",
-        left: "192px",
+       
         top: "69px"
         
     }}>
-        <h3>To:{dropdown}</h3>
+        <article id="flex2">
+        <h3 style={{height: "22px",
+width: "62px",
+left: "36px",
+top: "69px",
+margin:"0"}}>To:{dropdown}</h3>
         <select  style={{  left: "172px",
         top: "69px"}} value ={dropdown} onChange={(e)=>{setDropdown(e.target.value)}}>
         <option value="Stockholm">Stockholm</option>
@@ -21,6 +27,7 @@ import React ,{useState} from 'react';
         <option value="Umeå">Umeå</option>
         <option value="luleå">luleå</option>
         </select>
+        </article>
     </form>)
 
 }

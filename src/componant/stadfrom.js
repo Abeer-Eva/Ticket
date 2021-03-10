@@ -5,11 +5,13 @@ import React ,{useState} from 'react';
     const[dropdown , setDropdown]= useState(" ");
   
     return(
-    <form >
-        <h3 style={{height: "32px",
-width: "132px",
+    <form  id="grid" >
+        <article id= "flex1">
+        <h3 style={{height: "22px",
+width: "62px",
 left: "16px",
-top: "69px",
+top: "59px",
+margin:"0"
 }} >From:{dropdown}</h3>
         
         <select   value ={dropdown} onChange={(e)=>{setDropdown(e.target.value)}}>
@@ -21,8 +23,10 @@ top: "69px",
         <option value="Umeå">Umeå</option>
         <option value="luleå">luleå</option>
         </select>
+       
+        </article>
     </form>)
-    
+     console.log({dropdown});
 
 }
 

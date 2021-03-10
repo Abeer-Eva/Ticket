@@ -1,6 +1,5 @@
 .App {
-  text-align: center;}
-  .login{
+  
     max-width: 350px;
     margin: 0 auto 20px;
     border-radius: 4px;
@@ -9,8 +8,8 @@
     box-sizing: border-box;
 
 }
-body {height: 520px;
-  width: 340px;
+body {height: 920px;
+  width: 370px;
   left: 396px;
   top: 84px;
   border-radius: 6px;
@@ -19,8 +18,25 @@ body {height: 520px;
 }
 
 #root{
+  display: flex;
   height: 100vh;
   background-size: cover;
   padding-top: 60px;
   background-image: url(https://images.pexels.com/photos/94273/jetty-beach-sunset-sea-94273.jpeg);
+}
+#grid { display: inline;
+  
+}
+#flex2 {
+  right:17px;
+}
+h3{
+  margin:0;
+}
+p{
+  
+}
+.react-calander{
+  height: 200px;
+  top:100px;
 }

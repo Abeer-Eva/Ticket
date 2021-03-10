@@ -5,7 +5,11 @@ import 'react-calendar/dist/Calendar.css';
 
 function MyApp() {
   const [value, onChange] = useState(new Date());
-
+  const [date, setDate] = useState(new Date());
+  const onDateChange = (newDate) => {
+    setDate(newDate);
+    console.log(newDate);
+}
   return (
     <div>
       <Calendar
@@ -13,6 +17,7 @@ function MyApp() {
         value={value}
       />
     </div>
+   
   );
 }
 export default MyApp;
